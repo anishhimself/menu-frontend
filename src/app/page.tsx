@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Input } from '@/components/UI/input';
-import { Button } from '@/components/UI/button';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 
 const LoginPage = () => {
@@ -35,7 +35,14 @@ const LoginPage = () => {
                         onChange={(e) => setPassword(e.target.value)}
                         className="w-full"
                     />
-                    <Button type="submit" className="w-full">Login</Button>
+                    <Button type="submit" 
+                    className="w-full bg-gradient-to-r from-orange-500 to-yellow-500
+                    text-white font-semibold py-3 rounded-lg shadow-lg 
+                    transform transition-all duration-300 
+                    hover:scale-105 hover:shadow-xl 
+                    focus:outline-none focus:ring-2
+                    focus:ring-orange-600">Login
+                    </Button>
                 </form>
             </div>
         </div>
